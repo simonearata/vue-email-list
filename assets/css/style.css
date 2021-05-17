@@ -1,0 +1,28 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  background-color: burlywood;
+  border-radius: 20px;
+  margin-top: 50px;
+}
+
+.container h1{
+  padding-top: 20px;
+}
+
+.container ul{
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.container ul li{
+  text-align: left;
+  margin: 20px 0;
+}

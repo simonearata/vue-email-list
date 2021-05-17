@@ -12,12 +12,16 @@
 
   <div id="app">
 
-    <div v-if="emails.length === 10">
-
-      <li v-for="(email, index) in emails">
-        Email {{ index + 1 }}: {{ email }}
-      </li>
-
+    <div 
+      class="container"
+      v-if="emails.length === 10"
+    >
+      <h1>Generatore di 10 email</h1>
+      <ul>
+        <li v-for="(email, index) in emails">
+          Email {{ index + 1 }}: {{ email }}
+        </li>
+      </ul>
     </div>
 
   </div>

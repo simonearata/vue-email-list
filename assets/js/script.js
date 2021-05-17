@@ -4,6 +4,7 @@ const app = new Vue({
 
   data:{
     emails: [],
+    loading: true
   },
 
   mounted(){
