@@ -18,10 +18,18 @@
     >
       <h1>Generatore di 10 email</h1>
       <ul>
-        <li v-for="(email, index) in emails">
+        <li 
+          v-for="(email, index) in emails"
+          v-if="!isHidden"
+        >
           Email {{ index + 1 }}: {{ email }}
         </li>
       </ul>
+
+      <div class="btn">
+        <button @click="isHidden = true">Nascondi l'email</button>
+        <button @click="isHidden = false">Mostra l'email</button>
+      </div>
     </div>
 
   </div>
